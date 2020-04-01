@@ -22,6 +22,12 @@ p {
   color: #58402C;
 }
 
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
 /* FINE STILE GENERALE */
 
 /* HEADER */
@@ -48,7 +54,7 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 75px;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #e1ddd4;
 }
 
 header img:hover {
@@ -132,14 +138,7 @@ header .google-signup-button:hover {
 
 /* FINE HEADER */
 
-/* MAIN */
-
-.container {
-  height: 100vh;
-  max-width: 1200px;
-  width: 90%;
-  margin: 0 auto;
-}
+/* SEZIONE INTRODUTTIVA */
 
 .introduction-signup {
   display: flex;
@@ -195,6 +194,11 @@ header .google-signup-button:hover {
   border-radius: 7px;
   border: none;
   background-color: #30488F;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.introduction-signup .intro-signup:hover {
+  background-color: #233569;
 }
 
 .introduction-signup .use-email {
@@ -202,11 +206,85 @@ header .google-signup-button:hover {
   color: #58402C;
 }
 
+.introduction-signup .use-email:hover {
+  color: #30488F;
+}
+
 .introduction-signup .introduction-image img {
   width: 570px;
 }
 
-/* FINE MAIN */
+/* FINE SEZIONE INTRODUTTIVA */
+
+/* SEZIONE SOLUZIONE TEAMBIT */
+
+.traditional-and-teambit-solution {
+  background-color: #ffe7d2;
+}
+
+.traditional-solution {
+  border-bottom: 1px solid gray;
+}
+
+.traditional-solution,
+.teambit-solution {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.traditional-solution h2,
+.teambit-solution h2 {
+  color: #58402C;
+  font-size: 26px;
+  font-weight: 500;
+  max-width: 630px;
+}
+
+.traditional-solution [class^=tradition-section],
+.traditional-solution [class^=teambit-section],
+.teambit-solution [class^=tradition-section],
+.teambit-solution [class^=teambit-section] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 75px;
+}
+
+.traditional-solution [class^=tradition-section] img,
+.traditional-solution [class^=teambit-section] img,
+.teambit-solution [class^=tradition-section] img,
+.teambit-solution [class^=teambit-section] img {
+  width: 140px;
+  height: 105px;
+}
+
+.traditional-solution [class^=tradition-section] p,
+.traditional-solution [class^=teambit-section] p,
+.teambit-solution [class^=tradition-section] p,
+.teambit-solution [class^=teambit-section] p {
+  font-size: 18px;
+  padding-top: 30px;
+  line-height: 30px;
+}
+
+.traditional-solution > img,
+.teambit-solution > img {
+  width: 280px;
+  padding-top: 75px;
+}
+
+.teambit-solution span {
+  color: #58402C;
+  font-size: 26px;
+  font-weight: 500;
+  padding-top: 100px;
+}
+
+/* FINE SEZIONE SOLUZIONE TEAMBIT */
 
 /* FOOTER */
 
@@ -235,6 +313,15 @@ header .google-signup-button:hover {
   .introduction-signup .introduction-image img {
     width: 100%;
     max-width: 570px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .row-images {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 860px;
   }
 }
 

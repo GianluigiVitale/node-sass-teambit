@@ -1,0 +1,54 @@
+.traditional-and-teambit-solution {
+    background-color: $background-color;
+}
+
+.traditional-solution {
+    border-bottom: 1px solid gray;
+}
+.traditional-solution, .teambit-solution {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+
+    h2 {
+        color: $primary-color;
+        font-size: 26px;
+        font-weight: 500;
+        max-width: 630px;
+    }
+
+    [class^="tradition-section"], [class^="teambit-section"] {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 75px;
+
+        img {
+            width: 140px;
+            height: 105px;
+        }
+
+        p {
+            font-size: 18px;
+            padding-top: 30px;
+            line-height: 30px;
+        }
+    }
+
+    & > img {
+        width: 280px;
+        padding-top: 75px;
+    }
+}
+
+.teambit-solution {
+    span {
+        color: $primary-color;
+        font-size: 26px;
+        font-weight: 500;
+        padding-top: 100px;
+    }
+}
