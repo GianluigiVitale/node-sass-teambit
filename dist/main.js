@@ -105,7 +105,7 @@
 /***/ (function(module, exports) {
 
 $('.remove').click(function () {
-  // al click di .remove nasconto la scritta dei cookies
+  // al click di .remove nascondo la scritta dei cookies
   $('.cookies').hide();
 });
 

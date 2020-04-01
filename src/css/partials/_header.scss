@@ -1,10 +1,10 @@
 .cookies {
     background-color: $background-color;
-    height: 40px;
     text-align: center;
-    line-height: 40px;
+    line-height: 20px;
 
     p {
+        padding: 10px;
         color: $primary-color;
         font-size: 12px;
         font-weight: bold;
@@ -13,4 +13,94 @@
     a {
         color: $secondary-color;
     }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    border-bottom: 1px solid lightgray;
+
+    img:hover {
+        cursor: pointer;
+    }
+
+    a {
+        color: $primary-color;
+        font-size: 14px;
+        font-weight: 500;
+        transition: color 0.2s ease-in-out;
+
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+
+    li {
+        margin-left: 40px;
+    }
+
+    .solutions {
+        display: flex;
+        position: relative;
+        padding: 25px 0;
+    }
+
+    .solutions:hover {
+        .menu-dropdown {
+            display: block;
+        }
+
+        .link-solutions {
+            color: $secondary-color;
+        }
+    }
+
+    .menu-dropdown {
+        display: none;
+        position: absolute;
+        left: -10px;
+        width: 100px;
+        margin-top: 30px;
+        transition: opacity linear 0.15s;
+        box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+        background: #fff;
+        border: 1px solid #e1ddd4;
+        border-radius: 7px;
+
+        a {
+            display: block;
+            padding: 10px 10px;
+            font-weight: 500;
+        }
+    }
+
+    .google-signup-button {
+        display: flex;
+        padding: 9px 11px 9px;
+        font-size: 14px;
+        font-weight: 500;
+        color: $secondary-color;
+        border-radius: 7px;
+        border: 1px solid $secondary-color;
+        transition: background-color 0.2s ease-in-out;
+        transition: color 0.2s ease-in-out;
+
+        span {
+            padding-left: 7px;
+        }
+
+        &:hover {
+            background-color: $secondary-color;
+            color: white;
+        }
+    }
+
 }

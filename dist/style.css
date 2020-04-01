@@ -24,12 +24,12 @@ body {
 
 .cookies {
   background-color: #ffe7d2;
-  height: 40px;
   text-align: center;
-  line-height: 40px;
+  line-height: 20px;
 }
 
 .cookies p {
+  padding: 10px;
   color: #58402C;
   font-size: 12px;
   font-weight: bold;
@@ -37,6 +37,93 @@ body {
 
 .cookies a {
   color: #30488F;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  border-bottom: 1px solid lightgray;
+}
+
+header img:hover {
+  cursor: pointer;
+}
+
+header a {
+  color: #58402C;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+header a:hover {
+  color: #30488F;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+header li {
+  margin-left: 40px;
+}
+
+header .solutions {
+  display: flex;
+  position: relative;
+  padding: 25px 0;
+}
+
+header .solutions:hover .menu-dropdown {
+  display: block;
+}
+
+header .solutions:hover .link-solutions {
+  color: #30488F;
+}
+
+header .menu-dropdown {
+  display: none;
+  position: absolute;
+  left: -10px;
+  width: 100px;
+  margin-top: 30px;
+  transition: opacity linear 0.15s;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  border: 1px solid #e1ddd4;
+  border-radius: 7px;
+}
+
+header .menu-dropdown a {
+  display: block;
+  padding: 10px 10px;
+  font-weight: 500;
+}
+
+header .google-signup-button {
+  display: flex;
+  padding: 9px 11px 9px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #30488F;
+  border-radius: 7px;
+  border: 1px solid #30488F;
+  transition: background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+header .google-signup-button span {
+  padding-left: 7px;
+}
+
+header .google-signup-button:hover {
+  background-color: #30488F;
+  color: white;
 }
 
 /* FINE HEADER */
@@ -55,4 +142,8 @@ body {
 /* FOOTER */
 
 /* FINE FOOTER */
+
+.hidden {
+  display: none;
+}
 

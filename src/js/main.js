@@ -1,3 +1,3 @@
-$('.remove').click(function () {    // al click di .remove nasconto la scritta dei cookies
+$('.remove').click(function () {    // al click di .remove nascondo la scritta dei cookies
     $('.cookies').hide();
 });
