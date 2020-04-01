@@ -1,0 +1,16 @@
+.cookies {
+    background-color: $background-color;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+
+    p {
+        color: $primary-color;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    a {
+        color: $secondary-color;
+    }
+}

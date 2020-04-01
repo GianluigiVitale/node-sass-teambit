@@ -1,0 +1,58 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FINE RESET */
+
+/* STILE GENERALE */
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* FINE STILE GENERALE */
+
+/* HEADER */
+
+.cookies {
+  background-color: #ffe7d2;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.cookies p {
+  color: #58402C;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.cookies a {
+  color: #30488F;
+}
+
+/* FINE HEADER */
+
+/* MAIN */
+
+.container {
+  height: 100vh;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* FINE MAIN */
+
+/* FOOTER */
+
+/* FINE FOOTER */
+
