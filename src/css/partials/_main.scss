@@ -5,3 +5,68 @@
     margin: 0 auto;
     // background-color: lightgray;
 }
+
+.introduction-signup {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0;
+
+    .text-signup {
+        width: 45%;
+
+        h1 {
+            font-size: 50px;
+            font-weight: 500;
+            color: $primary-color;
+            line-height: 70px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 22px;
+            line-height: 33px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .btn-google-slack {
+        display: flex;
+        height: 35px;
+        margin-bottom: 20px;
+
+        a {
+            color: white;
+            font-size: 14px;
+        }
+
+        p {
+            padding: 0 15px 15px 15px;
+            font-size: 13px;
+            color: $third-color;
+        }
+
+        span {
+            padding-left: 5px;
+        }
+    }
+
+    .intro-signup {
+        display: flex;
+        align-items: center;
+        height: 35px;
+        line-height: 35px;
+        padding: 0 20px;
+        border-radius: 7px;
+        border: none;
+        background-color: $secondary-color;
+    }
+
+    .use-email {
+        font-size: 14px;
+        color: $primary-color;
+    }
+
+    .introduction-image img {
+        width: 570px;
+    }
+}

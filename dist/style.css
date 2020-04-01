@@ -18,6 +18,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+p {
+  color: #58402C;
+}
+
 /* FINE STILE GENERALE */
 
 /* HEADER */
@@ -137,11 +141,102 @@ header .google-signup-button:hover {
   margin: 0 auto;
 }
 
+.introduction-signup {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0;
+}
+
+.introduction-signup .text-signup {
+  width: 45%;
+}
+
+.introduction-signup .text-signup h1 {
+  font-size: 50px;
+  font-weight: 500;
+  color: #58402C;
+  line-height: 70px;
+  margin-bottom: 30px;
+}
+
+.introduction-signup .text-signup p {
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 40px;
+}
+
+.introduction-signup .btn-google-slack {
+  display: flex;
+  height: 35px;
+  margin-bottom: 20px;
+}
+
+.introduction-signup .btn-google-slack a {
+  color: white;
+  font-size: 14px;
+}
+
+.introduction-signup .btn-google-slack p {
+  padding: 0 15px 15px 15px;
+  font-size: 13px;
+  color: #BDB5AF;
+}
+
+.introduction-signup .btn-google-slack span {
+  padding-left: 5px;
+}
+
+.introduction-signup .intro-signup {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  line-height: 35px;
+  padding: 0 20px;
+  border-radius: 7px;
+  border: none;
+  background-color: #30488F;
+}
+
+.introduction-signup .use-email {
+  font-size: 14px;
+  color: #58402C;
+}
+
+.introduction-signup .introduction-image img {
+  width: 570px;
+}
+
 /* FINE MAIN */
 
 /* FOOTER */
 
 /* FINE FOOTER */
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 1200px) {
+  .introduction-signup {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .introduction-signup .text-signup {
+    width: 100%;
+    max-width: 628px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .introduction-signup .introduction-image img {
+    width: 100%;
+    max-width: 570px;
+  }
+}
 
 .hidden {
   display: none;

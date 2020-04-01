@@ -1,0 +1,23 @@
+@media screen and (max-width: 1200px) {
+    .introduction-signup {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .text-signup {
+            width: 100%;
+            max-width: 628px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .introduction-image img {
+            width: 100%;
+            max-width: 570px;
+        }
+    }
+}
