@@ -22,6 +22,10 @@ p {
   color: #58402C;
 }
 
+i {
+  cursor: pointer;
+}
+
 .container {
   max-width: 1200px;
   width: 90%;
@@ -33,7 +37,12 @@ p {
 /* HEADER */
 
 .cookies {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 9998;
   background-color: #ffe7d2;
+  border-top: 1px solid #BDB5AF;
   text-align: center;
   line-height: 20px;
 }
@@ -49,12 +58,20 @@ p {
   color: #30488F;
 }
 
+.container-full-width {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 999;
+  background-color: white;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 75px;
-  border-bottom: 1px solid #e1ddd4;
+  border-bottom: 1px solid #BDB5AF;
 }
 
 header img:hover {
@@ -80,6 +97,12 @@ header ul {
 
 header li {
   margin-left: 40px;
+}
+
+header .fa-bars {
+  display: none;
+  color: #58402C;
+  font-size: 26px;
 }
 
 .solutions {
@@ -144,6 +167,7 @@ header li {
   display: flex;
   justify-content: space-between;
   margin: 100px 0;
+  padding-top: 75px;
 }
 
 .text-signup {
@@ -311,6 +335,30 @@ header li {
 }
 
 @media screen and (max-width: 768px) {
+  .container-full-width {
+    border-bottom: 1px solid #BDB5AF;
+  }
+
+  .container-full-width .container {
+    width: 95%;
+  }
+
+  header {
+    border-bottom: none;
+  }
+
+  header .fa-bars {
+    display: block;
+  }
+
+  .navbar-signup {
+    display: none;
+  }
+
+  .text-signup > p {
+    font-size: 18px;
+  }
+
   .btn-google-slack {
     display: block;
     width: 100%;
@@ -327,16 +375,12 @@ header li {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .row-images {
     display: flex;
     justify-content: space-between;
     width: 100%;
     max-width: 860px;
   }
-}
-
-.hidden {
-  display: none;
 }
 

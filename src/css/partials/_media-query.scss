@@ -1,4 +1,5 @@
 @media screen and (max-width: 1200px) {
+
     .introduction-signup {
         display: flex;
         flex-direction: column;
@@ -22,6 +23,31 @@
 }
 
 @media screen and (max-width: 768px) {
+
+    .container-full-width {
+        border-bottom: 1px solid $third-color;
+
+        .container {
+            width: 95%;
+        }
+    }
+
+    header {
+        border-bottom: none;
+
+        .fa-bars {
+            display: block;
+        }
+    }
+
+    .navbar-signup {
+        display: none;
+    }
+
+    .text-signup > p {
+        font-size: 18px;
+    }
+
     .btn-google-slack {
         display: block;
         width: 100%;
@@ -38,7 +64,8 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
+
     .row-images {
         display: flex;
         justify-content: space-between;

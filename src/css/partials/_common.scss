@@ -10,6 +10,10 @@ p {
     color: $primary-color;
 }
 
+i {
+    cursor: pointer;
+}
+
 .container {
     max-width: 1200px;
     width: 90%;

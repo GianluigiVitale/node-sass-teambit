@@ -1,5 +1,10 @@
 .cookies {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9998;
     background-color: $background-color;
+    border-top: 1px solid $third-color;
     text-align: center;
     line-height: 20px;
 
@@ -15,12 +20,20 @@
     }
 }
 
+.container-full-width {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+    background-color: white;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 75px;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid $third-color;
 
     img:hover {
         cursor: pointer;
@@ -45,6 +58,12 @@ header {
 
     li {
         margin-left: 40px;
+    }
+
+    .fa-bars {
+        display: none;
+        color: $primary-color;
+        font-size: 26px;
     }
 }
 
@@ -93,7 +112,7 @@ header {
     border: 1px solid $secondary-color;
     transition: background-color 0.2s ease-in-out;
     transition: color 0.2s ease-in-out;
-    
+
     &:hover {
         background-color: $secondary-color;
         color: white;
