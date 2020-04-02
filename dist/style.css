@@ -1,3 +1,7 @@
+/* MIXIN */
+
+/* FINE MIXIN */
+
 /* RESET */
 
 * {
@@ -61,8 +65,8 @@ i {
 .cookies {
   position: fixed;
   bottom: 0;
-  width: 100%;
   z-index: 9998;
+  width: 100%;
   background-color: #ffe7d2;
   border-top: 1px solid #BDB5AF;
   text-align: center;
@@ -82,9 +86,9 @@ i {
 
 .container-full-width {
   position: fixed;
-  top: 0px;
-  width: 100%;
+  top: 0;
   z-index: 999;
+  width: 100%;
   background-color: white;
 }
 
@@ -165,13 +169,12 @@ header .fa-bars {
 .google-signup-button {
   display: flex;
   padding: 9px 11px 9px;
+  color: #30488F;
   font-size: 14px;
   font-weight: 500;
-  color: #30488F;
-  border-radius: 7px;
   border: 1px solid #30488F;
-  transition: background-color 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out;
+  border-radius: 7px;
+  transition: background-color 0.2s linear, color 0.2s linear;
 }
 
 .google-signup-button:hover {
@@ -199,9 +202,9 @@ header .fa-bars {
 }
 
 .text-signup h1 {
+  color: #58402C;
   font-size: 50px;
   font-weight: 500;
-  color: #58402C;
   line-height: 70px;
   margin-bottom: 30px;
 }
@@ -224,9 +227,9 @@ header .fa-bars {
 }
 
 .btn-google-slack p {
-  padding: 0 15px;
-  font-size: 13px;
   color: #BDB5AF;
+  font-size: 13px;
+  padding: 0 15px;
 }
 
 .btn-google-slack span {
@@ -240,7 +243,6 @@ header .fa-bars {
   line-height: 35px;
   padding: 0 20px;
   border-radius: 7px;
-  border: none;
   background-color: #30488F;
   transition: background-color 0.2s ease-in-out;
 }
@@ -250,8 +252,8 @@ header .fa-bars {
 }
 
 .use-email {
-  font-size: 14px;
   color: #58402C;
+  font-size: 14px;
   margin-bottom: 15px;
 }
 
@@ -281,7 +283,6 @@ header .fa-bars {
   display: flex;
   flex-direction: column;
   align-items: center;
-  vertical-align: middle;
   text-align: center;
 }
 
@@ -357,9 +358,9 @@ header .fa-bars {
 }
 
 .text-reason h3 {
+  color: #58402C;
   font-size: 26px;
   font-weight: 500;
-  color: #58402C;
   line-height: 40px;
   margin-bottom: 15px;
 }
@@ -376,13 +377,13 @@ header .fa-bars {
 }
 
 .text-reason span {
-  font-size: 22px;
   color: #30488F;
+  font-size: 22px;
 }
 
 .text-reason i {
-  font-size: 18px;
   color: #30488F;
+  font-size: 18px;
 }
 
 .content-text-reason {
@@ -422,7 +423,6 @@ header .fa-bars {
     display: flex;
     flex-direction: column;
     align-items: center;
-    vertical-align: middle;
     text-align: center;
   }
 
@@ -437,7 +437,6 @@ header .fa-bars {
     display: flex;
     flex-direction: column;
     align-items: center;
-    vertical-align: middle;
     text-align: center;
   }
 

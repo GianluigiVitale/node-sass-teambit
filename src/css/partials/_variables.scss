@@ -4,13 +4,3 @@ $third-color: #BDB5AF;
 $background-color: #ffe7d2;
 $border-color: #e1ddd4;
 $hover-color: #233569;
-
-@mixin contentAndTextCenter {
-    width: 100%;
-    max-width: 628px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    vertical-align: middle;
-    text-align: center;
-}

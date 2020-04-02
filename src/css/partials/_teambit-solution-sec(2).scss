@@ -3,24 +3,18 @@
 }
 
 .traditional-solution {
-    border-bottom: 1px solid gray;
+    @include border-1px-solid(border-bottom, gray);
 }
 
 .traditional-solution, .teambit-solution {
     padding: 100px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    vertical-align: middle;
-    text-align: center;
+    @include flex-align-column-textCenter(center);
 }
 
 .traditional-solution, .teambit-solution {
 
     h2 {
-        color: $primary-color;
-        font-size: 26px;
-        font-weight: 500;
+        @include color-fontSize-fontWeight($primary-color, 26px, 500);
         max-width: 630px;
     }
 
@@ -31,9 +25,7 @@
 }
 
 [class^="tradition-section"], [class^="teambit-section"] {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-align-column(center);
     padding-top: 75px;
 
     img {
@@ -50,9 +42,7 @@
 
 .teambit-solution {
     span {
-        color: $primary-color;
-        font-size: 26px;
-        font-weight: 500;
+        @include color-fontSize-fontWeight($primary-color, 26px, 500);
         padding-top: 100px;
     }
 }

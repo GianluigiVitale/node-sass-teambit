@@ -2,13 +2,13 @@
 
     /* media query PRIMA SEZIONE INTRODUTTIVA */
     .introduction-signup {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-align-column(center);
     }
 
     .text-signup {
-        @include contentAndTextCenter;
+        width: 100%;
+        max-width: 628px;
+        @include flex-align-column-textCenter(center);
     }
 
     .introduction-image img {
@@ -18,11 +18,7 @@
 
     /* media query TERZA SEZIONE why-teambit-better */
     [class^="reason-"] {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        vertical-align: middle;
-        text-align: center;
+        @include flex-align-column-textCenter(center);
     }
 
     .reason-2, .reason-4 {  /* per vedere sempre prima del testo l'immagine */
@@ -61,7 +57,7 @@
 @media screen and (max-width: 768px) {
 
     .container-full-width {
-        border-bottom: 1px solid $third-color;
+        @include border-1px-solid(border-bottom, $third-color);
 
         .container {
             width: 95%;
@@ -94,8 +90,7 @@
 
         a {
             width: 100%;
-            display: flex;
-            justify-content: center;
+            @include flex-justify(center);
         }
     }
 }
@@ -103,8 +98,7 @@
 @media screen and (min-width: 769px) {
 
     .row-images {
-        display: flex;
-        justify-content: space-between;
+        @include flex-justify(space-between);
         width: 100%;
         max-width: 860px;
     }

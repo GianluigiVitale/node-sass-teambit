@@ -1,11 +1,8 @@
 .cookies {
     // display: none; // da rimuovere
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 9998;
+    @include fixed-element(bottom, 9998);
     background-color: $background-color;
-    border-top: 1px solid $third-color;
+    @include border-1px-solid(border-top, $third-color);
     text-align: center;
     line-height: 20px;
 
@@ -22,28 +19,21 @@
 }
 
 .container-full-width {
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    z-index: 999;
+    @include fixed-element(top, 999);
     background-color: white;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-justify-align(space-between, center);
     height: 75px;
-    border-bottom: 1px solid $third-color;
+    @include border-1px-solid(border-bottom, $third-color);
 
     img:hover {
         cursor: pointer;
     }
 
     a {
-        color: $primary-color;
-        font-size: 14px;
-        font-weight: 500;
+        @include color-fontSize-fontWeight($primary-color, 14px, 500);
         transition: color 0.2s ease-in-out;
 
         &:hover {
@@ -53,8 +43,7 @@ header {
 
     ul {
         list-style: none;
-        display: flex;
-        align-items: center;
+        @include flex-align(center);
     }
 
     li {
@@ -95,8 +84,7 @@ header {
     transition: opacity 0.15s linear;
     box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
     background: #fff;
-    border: 1px solid $border-color;
-    border-radius: 7px;
+    @include border-1px-solid-radius(border, $border-color, 7px);
 
     a {
         display: block;
@@ -108,13 +96,9 @@ header {
 .google-signup-button {
     display: flex;
     padding: 9px 11px 9px;
-    font-size: 14px;
-    font-weight: 500;
-    color: $secondary-color;
-    border-radius: 7px;
-    border: 1px solid $secondary-color;
-    transition: background-color 0.2s ease-in-out;
-    transition: color 0.2s ease-in-out;
+    @include color-fontSize-fontWeight($secondary-color, 14px, 500);
+    @include border-1px-solid-radius(border, $secondary-color, 7px);
+    transition: background-color 0.2s linear, color 0.2s linear;
 
     &:hover {
         background-color: $secondary-color;

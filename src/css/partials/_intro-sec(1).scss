@@ -1,6 +1,5 @@
 .introduction-signup {
-    display: flex;
-    justify-content: space-between;
+    @include flex-justify(space-between);
     margin: 100px 0;
     padding-top: 75px;
 }
@@ -9,9 +8,7 @@
     width: 45%;
 
     h1 {
-        font-size: 50px;
-        font-weight: 500;
-        color: $primary-color;
+        @include color-fontSize-fontWeight($primary-color, 50px, 500);
         line-height: 70px;
         margin-bottom: 30px;
     }
@@ -24,19 +21,16 @@
 }
 
 .btn-google-slack {
-    display: flex;
-    align-items: center;
+    @include flex-align(center);
     margin-bottom: 20px;
 
     a {
-        color: white;
-        font-size: 14px;
+        @include color-fontSize(white, 14px);
     }
 
     p {
+        @include color-fontSize($third-color, 13px);
         padding: 0 15px;
-        font-size: 13px;
-        color: $third-color;
     }
 
     span {
@@ -45,13 +39,11 @@
 }
 
 .intro-signup {
-    display: flex;
-    align-items: center;
+    @include flex-align(center);
     height: 35px;
     line-height: 35px;
     padding: 0 20px;
     border-radius: 7px;
-    border: none;
     background-color: $secondary-color;
     transition: background-color 0.2s ease-in-out;
 
@@ -61,8 +53,7 @@
 }
 
 .use-email {
-    font-size: 14px;
-    color: $primary-color;
+    @include color-fontSize($primary-color, 14px);
     margin-bottom: 15px;
 
     &:hover {
