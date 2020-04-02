@@ -5,6 +5,7 @@
 .traditional-solution {
     border-bottom: 1px solid gray;
 }
+
 .traditional-solution, .teambit-solution {
     padding: 100px 0;
     display: flex;
@@ -12,6 +13,9 @@
     align-items: center;
     vertical-align: middle;
     text-align: center;
+}
+
+.traditional-solution, .teambit-solution {
 
     h2 {
         color: $primary-color;
@@ -20,27 +24,27 @@
         max-width: 630px;
     }
 
-    [class^="tradition-section"], [class^="teambit-section"] {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 75px;
-
-        img {
-            width: 140px;
-            height: 105px;
-        }
-
-        p {
-            font-size: 18px;
-            padding-top: 30px;
-            line-height: 30px;
-        }
-    }
-
     & > img {
         width: 280px;
         padding-top: 75px;
+    }
+}
+
+[class^="tradition-section"], [class^="teambit-section"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 75px;
+
+    img {
+        width: auto;
+        height: 105px;
+    }
+
+    p {
+        font-size: 18px;
+        padding-top: 30px;
+        line-height: 30px;
     }
 }
 

@@ -82,21 +82,21 @@ header li {
   margin-left: 40px;
 }
 
-header .solutions {
+.solutions {
   display: flex;
   position: relative;
   padding: 25px 0;
 }
 
-header .solutions:hover .menu-dropdown {
+.solutions:hover .menu-dropdown {
   display: block;
 }
 
-header .solutions:hover .link-solutions {
+.solutions:hover .link-solutions {
   color: #30488F;
 }
 
-header .menu-dropdown {
+.menu-dropdown {
   display: none;
   position: absolute;
   left: -10px;
@@ -109,13 +109,13 @@ header .menu-dropdown {
   border-radius: 7px;
 }
 
-header .menu-dropdown a {
+.menu-dropdown a {
   display: block;
   padding: 10px 10px;
   font-weight: 500;
 }
 
-header .google-signup-button {
+.google-signup-button {
   display: flex;
   padding: 9px 11px 9px;
   font-size: 14px;
@@ -127,13 +127,13 @@ header .google-signup-button {
   transition: color 0.2s ease-in-out;
 }
 
-header .google-signup-button span {
-  padding-left: 7px;
-}
-
-header .google-signup-button:hover {
+.google-signup-button:hover {
   background-color: #30488F;
   color: white;
+}
+
+.google-signup-button span {
+  padding-left: 7px;
 }
 
 /* FINE HEADER */
@@ -146,11 +146,11 @@ header .google-signup-button:hover {
   margin: 100px 0;
 }
 
-.introduction-signup .text-signup {
+.text-signup {
   width: 45%;
 }
 
-.introduction-signup .text-signup h1 {
+.text-signup h1 {
   font-size: 50px;
   font-weight: 500;
   color: #58402C;
@@ -158,34 +158,34 @@ header .google-signup-button:hover {
   margin-bottom: 30px;
 }
 
-.introduction-signup .text-signup p {
+.text-signup > p {
   font-size: 22px;
   line-height: 33px;
   margin-bottom: 40px;
 }
 
-.introduction-signup .btn-google-slack {
+.btn-google-slack {
   display: flex;
-  height: 35px;
+  align-items: center;
   margin-bottom: 20px;
 }
 
-.introduction-signup .btn-google-slack a {
+.btn-google-slack a {
   color: white;
   font-size: 14px;
 }
 
-.introduction-signup .btn-google-slack p {
-  padding: 0 15px 15px 15px;
+.btn-google-slack p {
+  padding: 0 15px;
   font-size: 13px;
   color: #BDB5AF;
 }
 
-.introduction-signup .btn-google-slack span {
+.btn-google-slack span {
   padding-left: 5px;
 }
 
-.introduction-signup .intro-signup {
+.intro-signup {
   display: flex;
   align-items: center;
   height: 35px;
@@ -197,20 +197,21 @@ header .google-signup-button:hover {
   transition: background-color 0.2s ease-in-out;
 }
 
-.introduction-signup .intro-signup:hover {
+.intro-signup:hover {
   background-color: #233569;
 }
 
-.introduction-signup .use-email {
+.use-email {
   font-size: 14px;
   color: #58402C;
+  margin-bottom: 15px;
 }
 
-.introduction-signup .use-email:hover {
+.use-email:hover {
   color: #30488F;
 }
 
-.introduction-signup .introduction-image img {
+.introduction-image img {
   width: 570px;
 }
 
@@ -244,37 +245,31 @@ header .google-signup-button:hover {
   max-width: 630px;
 }
 
-.traditional-solution [class^=tradition-section],
-.traditional-solution [class^=teambit-section],
-.teambit-solution [class^=tradition-section],
-.teambit-solution [class^=teambit-section] {
+.traditional-solution > img,
+.teambit-solution > img {
+  width: 280px;
+  padding-top: 75px;
+}
+
+[class^=tradition-section],
+[class^=teambit-section] {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 75px;
 }
 
-.traditional-solution [class^=tradition-section] img,
-.traditional-solution [class^=teambit-section] img,
-.teambit-solution [class^=tradition-section] img,
-.teambit-solution [class^=teambit-section] img {
-  width: 140px;
+[class^=tradition-section] img,
+[class^=teambit-section] img {
+  width: auto;
   height: 105px;
 }
 
-.traditional-solution [class^=tradition-section] p,
-.traditional-solution [class^=teambit-section] p,
-.teambit-solution [class^=tradition-section] p,
-.teambit-solution [class^=teambit-section] p {
+[class^=tradition-section] p,
+[class^=teambit-section] p {
   font-size: 18px;
   padding-top: 30px;
   line-height: 30px;
-}
-
-.traditional-solution > img,
-.teambit-solution > img {
-  width: 280px;
-  padding-top: 75px;
 }
 
 .teambit-solution span {
@@ -294,13 +289,12 @@ header .google-signup-button:hover {
 
 @media screen and (max-width: 1200px) {
   .introduction-signup {
-    display: block;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .introduction-signup .text-signup {
+  .text-signup {
     width: 100%;
     max-width: 628px;
     display: flex;
@@ -310,9 +304,26 @@ header .google-signup-button:hover {
     text-align: center;
   }
 
-  .introduction-signup .introduction-image img {
+  .introduction-image img {
     width: 100%;
     max-width: 570px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .btn-google-slack {
+    display: block;
+    width: 100%;
+  }
+
+  .btn-google-slack p {
+    padding: 15px 0;
+  }
+
+  .btn-google-slack a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }
 

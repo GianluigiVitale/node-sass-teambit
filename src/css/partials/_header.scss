@@ -46,14 +46,14 @@ header {
     li {
         margin-left: 40px;
     }
+}
 
-    .solutions {
-        display: flex;
-        position: relative;
-        padding: 25px 0;
-    }
+.solutions {
+    display: flex;
+    position: relative;
+    padding: 25px 0;
 
-    .solutions:hover {
+    &:hover {
         .menu-dropdown {
             display: block;
         }
@@ -62,45 +62,44 @@ header {
             color: $secondary-color;
         }
     }
+}
 
-    .menu-dropdown {
-        display: none;
-        position: absolute;
-        left: -10px;
-        width: 100px;
-        margin-top: 30px;
-        transition: opacity linear 0.15s;
-        box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
-        background: #fff;
-        border: 1px solid $border-color;
-        border-radius: 7px;
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    left: -10px;
+    width: 100px;
+    margin-top: 30px;
+    transition: opacity linear 0.15s;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+    background: #fff;
+    border: 1px solid $border-color;
+    border-radius: 7px;
 
-        a {
-            display: block;
-            padding: 10px 10px;
-            font-weight: 500;
-        }
-    }
-
-    .google-signup-button {
-        display: flex;
-        padding: 9px 11px 9px;
-        font-size: 14px;
+    a {
+        display: block;
+        padding: 10px 10px;
         font-weight: 500;
-        color: $secondary-color;
-        border-radius: 7px;
-        border: 1px solid $secondary-color;
-        transition: background-color 0.2s ease-in-out;
-        transition: color 0.2s ease-in-out;
+    }
+}
 
-        span {
-            padding-left: 7px;
-        }
-
-        &:hover {
-            background-color: $secondary-color;
-            color: white;
-        }
+.google-signup-button {
+    display: flex;
+    padding: 9px 11px 9px;
+    font-size: 14px;
+    font-weight: 500;
+    color: $secondary-color;
+    border-radius: 7px;
+    border: 1px solid $secondary-color;
+    transition: background-color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+    
+    &:hover {
+        background-color: $secondary-color;
+        color: white;
     }
 
+    span {
+        padding-left: 7px;
+    }
 }
