@@ -19,3 +19,25 @@ i {
     width: 90%;
     margin: 0 auto;
 }
+
+.clearfix {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.left {
+    float: left;
+
+    img {
+        float: left;
+    }
+}
+
+.right {
+    float: right;
+
+    img {
+        float: right;
+    }
+}

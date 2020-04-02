@@ -32,11 +32,34 @@ i {
   margin: 0 auto;
 }
 
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.left img {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.right img {
+  float: right;
+}
+
 /* FINE STILE GENERALE */
 
 /* HEADER */
 
 .cookies {
+  display: none;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -305,6 +328,75 @@ header .fa-bars {
 
 /* FINE SEZIONE SOLUZIONE TEAMBIT */
 
+/* SEZIONE PERCHE' TEAMBIT */
+
+.why-teambit-better {
+  padding: 80px 0;
+}
+
+[class^=reason-] {
+  display: flex;
+  padding-bottom: 100px;
+}
+
+.img-reason,
+.text-reason {
+  width: 50vw;
+}
+
+.img-reason img {
+  width: 100%;
+  height: auto;
+  max-width: 768px;
+}
+
+.content-text-reason {
+  width: 420px;
+}
+
+.text-reason {
+  padding-left: 10px;
+}
+
+.text-reason h3 {
+  font-size: 26px;
+  font-weight: 500;
+  color: #58402C;
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+
+.text-reason p {
+  font-size: 22px;
+  line-height: 35px;
+  margin-bottom: 35px;
+}
+
+.text-reason a {
+  display: block;
+  margin-bottom: 45px;
+}
+
+.text-reason span {
+  font-size: 22px;
+}
+
+.text-reason i {
+  font-size: 18px;
+}
+
+.img-text {
+  display: flex;
+  justify-content: center;
+}
+
+.img-text img {
+  max-width: 270px;
+  height: auto;
+}
+
+/* FINE SEZIONE PERCHE' TEAMBIT */
+
 /* FOOTER */
 
 /* FINE FOOTER */
@@ -331,6 +423,11 @@ header .fa-bars {
   .introduction-image img {
     width: 100%;
     max-width: 570px;
+  }
+
+  [class^=reason-] {
+    display: flex;
+    flex-direction: column;
   }
 }
 

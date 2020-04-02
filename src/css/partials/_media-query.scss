@@ -7,18 +7,17 @@
     }
 
     .text-signup {
-        width: 100%;
-        max-width: 628px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        vertical-align: middle;
-        text-align: center;
+        @include contentAndTextCenter;
     }
 
     .introduction-image img {
         width: 100%;
         max-width: 570px;
+    }
+
+    [class^="reason-"] {
+        display: flex;
+        flex-direction: column;
     }
 }
 
