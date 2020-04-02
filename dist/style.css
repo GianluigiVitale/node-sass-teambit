@@ -331,7 +331,7 @@ header .fa-bars {
 /* SEZIONE PERCHE' TEAMBIT */
 
 .why-teambit-better {
-  padding: 80px 0;
+  padding: 80px 25px 0 25px;
 }
 
 [class^=reason-] {
@@ -348,10 +348,7 @@ header .fa-bars {
   width: 100%;
   height: auto;
   max-width: 768px;
-}
-
-.content-text-reason {
-  width: 420px;
+  padding-bottom: 20px;
 }
 
 .text-reason {
@@ -379,10 +376,16 @@ header .fa-bars {
 
 .text-reason span {
   font-size: 22px;
+  color: #30488F;
 }
 
 .text-reason i {
   font-size: 18px;
+  color: #30488F;
+}
+
+.content-text-reason {
+  width: 420px;
 }
 
 .img-text {
@@ -404,6 +407,8 @@ header .fa-bars {
 /* MEDIA QUERY */
 
 @media screen and (max-width: 1200px) {
+  /* media query PRIMA SEZIONE INTRODUTTIVA */
+
   .introduction-signup {
     display: flex;
     flex-direction: column;
@@ -425,9 +430,49 @@ header .fa-bars {
     max-width: 570px;
   }
 
+  /* media query TERZA SEZIONE why-teambit-better */
+
   [class^=reason-] {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .reason-2,
+  .reason-4 {
+    /* per vedere sempre prima del testo l'immagine */
+    flex-direction: column-reverse;
+  }
+
+  .content-text-reason {
+    width: 100%;
+    max-width: 628px;
+  }
+
+  .content-text-reason p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .content-text-reason span {
+    font-size: 18px;
+  }
+
+  .img-reason,
+  .text-reason {
+    width: auto;
+  }
+
+  .img-reason img {
+    width: 100%;
+    height: auto;
+    max-width: 3000px;
+  }
+
+  .text-reason {
+    padding: 0;
   }
 }
 
