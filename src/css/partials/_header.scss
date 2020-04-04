@@ -40,20 +40,31 @@ header {
         }
     }
 
-    ul {
-        list-style: none;
-        @include flex-align(center);
-    }
-
-    li {
-        margin-left: 40px;
-    }
-
     .fa-bars {
+        position: relative;
         display: none;
         color: $primary-color;
         font-size: 26px;
     }
+
+    .fa-times {
+        display: none;
+        font-size: 26px;
+        color: $primary-color;
+    }
+}
+
+.header-ul {
+    list-style: none;
+    @include flex-align(center);
+
+    li {
+        margin-left: 40px;
+    }
+}
+
+.icona {
+    display: none;
 }
 
 .solutions {
@@ -108,3 +119,38 @@ header {
         padding-left: 7px;
     }
 }
+
+.hamburger-menu {
+    display: none;
+    position: absolute;
+    top: 76px;
+    right: 0;
+    width: 100vw;
+    background-color: white;
+    padding: 15px 50px;
+    @include border-1px-solid(border-bottom, $third-color);
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        li {
+            line-height: 35px;
+        }
+    }
+}
+
+#btn-google-header {
+    padding-top: 15px;
+
+    a {
+        @include flex-justify-align(center, center);
+        height: 35px;
+    }
+}
+
+
+
+
+//

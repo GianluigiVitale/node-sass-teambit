@@ -115,20 +115,31 @@ header a:hover {
   color: #30488F;
 }
 
-header ul {
+header .fa-bars {
+  position: relative;
+  display: none;
+  color: #58402C;
+  font-size: 26px;
+}
+
+header .fa-times {
+  display: none;
+  font-size: 26px;
+  color: #58402C;
+}
+
+.header-ul {
   list-style: none;
   display: flex;
   align-items: center;
 }
 
-header li {
+.header-ul li {
   margin-left: 40px;
 }
 
-header .fa-bars {
+.icona {
   display: none;
-  color: #58402C;
-  font-size: 26px;
 }
 
 .solutions {
@@ -184,6 +195,38 @@ header .fa-bars {
 
 .google-signup-button span {
   padding-left: 7px;
+}
+
+.hamburger-menu {
+  display: none;
+  position: absolute;
+  top: 76px;
+  right: 0;
+  width: 100vw;
+  background-color: white;
+  padding: 15px 50px;
+  border-bottom: 1px solid #BDB5AF;
+}
+
+.hamburger-menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.hamburger-menu ul li {
+  line-height: 35px;
+}
+
+#btn-google-header {
+  padding-top: 15px;
+}
+
+#btn-google-header a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
 }
 
 /* FINE HEADER */
@@ -684,6 +727,7 @@ footer.container {
     border-bottom: none;
   }
 
+  header .icona,
   header .fa-bars {
     display: block;
   }
