@@ -54,8 +54,36 @@
     }
 }
 
+@media screen and (max-width: 992px) {
+
+    /* media query footer */
+    footer.container {
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .text-img-footer {
+        width: 100%;
+    }
+
+    .links {
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 25px;
+    }
+
+    [class^="links-column"] {
+        width: 45%;
+        margin: 25px 5% 0 0;
+    }
+}
+
 @media screen and (max-width: 768px) {
 
+    /* media query header */
     .container-full-width {
         @include border-1px-solid(border-bottom, $third-color);
 
@@ -72,6 +100,7 @@
         }
     }
 
+    /* media query prima sezione introduttiva */
     .navbar-signup {
         display: none;
     }
@@ -93,18 +122,16 @@
             @include flex-justify(center);
         }
     }
-}
 
-@media screen and (min-width: 769px) {
-
+    /* media query seconda sezione */
     .row-images {
-        @include flex-justify(space-between);
-        width: 100%;
-        max-width: 860px;
+        display: block;
     }
 }
 
 @media screen and (max-width: 576px) {
+
+    /* media query quarta sezione recensione teambit */
     .btn-section4 {
         flex-direction: column;
         width: 100%;
@@ -117,5 +144,14 @@
             width: 100%;
             @include flex-justify(center);
         }
+    }
+}
+
+@media screen and (max-width: 379px) {
+
+    /* media query footer */
+    [class^="links-column"] {
+        width: 100%;
+        margin-top: 25px;
     }
 }

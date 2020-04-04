@@ -1,7 +1,3 @@
-/* MIXIN */
-
-/* FINE MIXIN */
-
 /* RESET */
 
 * {
@@ -28,6 +24,10 @@ p {
 
 i {
   cursor: pointer;
+}
+
+li {
+  list-style: none;
 }
 
 .container {
@@ -188,7 +188,7 @@ header .fa-bars {
 
 /* FINE HEADER */
 
-/* SEZIONE INTRODUTTIVA */
+/* SEZIONE INTRODUTTIVA (1) */
 
 .introduction-signup {
   display: flex;
@@ -271,7 +271,7 @@ header .fa-bars {
 
 /* FINE SEZIONE INTRODUTTIVA */
 
-/* SEZIONE SOLUZIONE TEAMBIT */
+/* SEZIONE SOLUZIONE TEAMBIT (2) */
 
 .traditional-and-teambit-solution {
   background-color: #ffe7d2;
@@ -326,6 +326,13 @@ header .fa-bars {
   line-height: 30px;
 }
 
+.row-images {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 860px;
+}
+
 .teambit-solution span {
   color: #58402C;
   font-size: 26px;
@@ -335,7 +342,7 @@ header .fa-bars {
 
 /* FINE SEZIONE SOLUZIONE TEAMBIT */
 
-/* SEZIONE PERCHE' TEAMBIT */
+/* SEZIONE PERCHE' TEAMBIT (3) */
 
 .why-teambit-better {
   padding: 80px 25px 0 25px;
@@ -408,7 +415,7 @@ header .fa-bars {
 
 /* FINE SEZIONE PERCHE' TEAMBIT */
 
-/* SEZIONE RECENSIONE TEAMBIT */
+/* SEZIONE RECENSIONE TEAMBIT (4) */
 
 .review-teambit {
   display: flex;
@@ -496,6 +503,73 @@ blockquote > p {
 
 /* FOOTER */
 
+footer.container {
+  width: 95%;
+  padding-bottom: 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 105px 25px 55px 25px;
+}
+
+.text-img-footer {
+  display: flex;
+  width: 32%;
+  padding-bottom: 40px;
+}
+
+.text-img-footer img {
+  align-self: flex-start;
+  width: 50px;
+  margin-right: 20px;
+}
+
+.link-text-footer a {
+  color: #30488F;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.link-text-footer span {
+  color: #58402C;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.links {
+  display: flex;
+  width: 60%;
+}
+
+[class^=links-column] {
+  width: 18%;
+  margin-left: 2%;
+}
+
+[class^=links-column] > p {
+  color: #58402C;
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+
+[class^=links-column] a {
+  color: #58402C;
+  font-size: 14px;
+  line-height: 35px;
+}
+
+[class^=links-column] a:hover {
+  color: #30488F;
+  transition: color 0.15s linear;
+}
+
+[class^=links-column] i {
+  padding-left: 5px;
+}
+
 /* FINE FOOTER */
 
 /* MEDIA QUERY */
@@ -568,7 +642,36 @@ blockquote > p {
   }
 }
 
+@media screen and (max-width: 992px) {
+  /* media query footer */
+
+  footer.container {
+    width: 100%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .text-img-footer {
+    width: 100%;
+  }
+
+  .links {
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 25px;
+  }
+
+  [class^=links-column] {
+    width: 45%;
+    margin: 25px 5% 0 0;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  /* media query header */
+
   .container-full-width {
     border-bottom: 1px solid #BDB5AF;
   }
@@ -584,6 +687,8 @@ blockquote > p {
   header .fa-bars {
     display: block;
   }
+
+  /* media query prima sezione introduttiva */
 
   .navbar-signup {
     display: none;
@@ -607,18 +712,17 @@ blockquote > p {
     display: flex;
     justify-content: center;
   }
-}
 
-@media screen and (min-width: 769px) {
+  /* media query seconda sezione */
+
   .row-images {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 860px;
+    display: block;
   }
 }
 
 @media screen and (max-width: 576px) {
+  /* media query quarta sezione recensione teambit */
+
   .btn-section4 {
     flex-direction: column;
     width: 100%;
@@ -632,6 +736,15 @@ blockquote > p {
     width: 100%;
     display: flex;
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 379px) {
+  /* media query footer */
+
+  [class^=links-column] {
+    width: 100%;
+    margin-top: 25px;
   }
 }
 

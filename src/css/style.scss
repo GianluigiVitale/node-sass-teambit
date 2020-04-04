@@ -1,7 +1,5 @@
 @import "partials/_variables";
-/* MIXIN */
 @import "partials/_mixin";
-/* FINE MIXIN */
 /* RESET */
 @import "partials/_reset";
 /* FINE RESET */
@@ -11,16 +9,16 @@
 /* HEADER */
 @import "partials/_header";
 /* FINE HEADER */
-/* SEZIONE INTRODUTTIVA */
+/* SEZIONE INTRODUTTIVA (1) */
 @import "partials/_intro-sec(1)";
 /* FINE SEZIONE INTRODUTTIVA */
-/* SEZIONE SOLUZIONE TEAMBIT */
+/* SEZIONE SOLUZIONE TEAMBIT (2) */
 @import "partials/_teambit-solution-sec(2)";
 /* FINE SEZIONE SOLUZIONE TEAMBIT */
-/* SEZIONE PERCHE' TEAMBIT */
+/* SEZIONE PERCHE' TEAMBIT (3) */
 @import "partials/_whyBetter-sec(3)";
 /* FINE SEZIONE PERCHE' TEAMBIT */
-/* SEZIONE RECENSIONE TEAMBIT */
+/* SEZIONE RECENSIONE TEAMBIT (4) */
 @import "partials/_reviewTeambit-sec(4)";
 /* FINE SEZIONE RECENSIONE TEAMBIT */
 /* FOOTER */

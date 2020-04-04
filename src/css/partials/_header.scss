@@ -1,5 +1,4 @@
 .cookies {
-    // display: none; // da rimuovere
     @include fixed-element(bottom, 9998);
     background-color: $background-color;
     @include border-1px-solid(border-top, $third-color);
