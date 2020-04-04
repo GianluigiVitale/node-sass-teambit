@@ -215,24 +215,28 @@ header .fa-bars {
   margin-bottom: 40px;
 }
 
-.btn-google-slack {
+.btn-google-slack,
+.btn-section4 {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.btn-google-slack a {
+.btn-google-slack a,
+.btn-section4 a {
   color: white;
   font-size: 14px;
 }
 
-.btn-google-slack p {
+.btn-google-slack p,
+.btn-section4 p {
   color: #BDB5AF;
   font-size: 13px;
   padding: 0 15px;
 }
 
-.btn-google-slack span {
+.btn-google-slack span,
+.btn-section4 span {
   padding-left: 5px;
 }
 
@@ -297,6 +301,7 @@ header .fa-bars {
 .traditional-solution > img,
 .teambit-solution > img {
   width: 280px;
+  height: auto;
   padding-top: 75px;
 }
 
@@ -351,6 +356,7 @@ header .fa-bars {
   height: auto;
   max-width: 768px;
   padding-bottom: 20px;
+  /* serve per il responsive per dare spazio */
 }
 
 .text-reason {
@@ -396,11 +402,97 @@ header .fa-bars {
 }
 
 .img-text img {
-  max-width: 270px;
+  width: 270px;
   height: auto;
 }
 
 /* FINE SEZIONE PERCHE' TEAMBIT */
+
+/* SEZIONE RECENSIONE TEAMBIT */
+
+.review-teambit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffe7d2;
+  padding: 75px 25px 50px 25px;
+}
+
+.top-text-review {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.top-text-review h1 {
+  color: #58402C;
+  font-size: 40px;
+  font-weight: 500;
+  display: inline;
+  line-height: 60px;
+}
+
+.top-text-review img {
+  padding-left: 7px;
+}
+
+blockquote {
+  position: relative;
+  width: 100%;
+  max-width: 628px;
+  margin-bottom: 35px;
+  padding: 20px 20px 20px 40px;
+  background-color: white;
+  border: 1px solid #BDB5AF;
+  border-radius: 7px;
+}
+
+blockquote > img {
+  position: absolute;
+  width: 37px;
+  height: auto;
+  top: -19px;
+  left: 0;
+}
+
+blockquote > p {
+  color: #58402C;
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+
+.details-authors-review {
+  display: flex;
+}
+
+.details-authors-review img {
+  width: 38px;
+}
+
+.details-authors-review #padding-left-img {
+  margin-left: 12px;
+}
+
+.name-authors-review {
+  padding-left: 12px;
+}
+
+#names {
+  color: #30488F;
+  font-size: 14px;
+  padding-bottom: 7px;
+}
+
+#role {
+  color: #58402C;
+  font-size: 12px;
+}
+
+#max-width {
+  max-width: 628px;
+}
+
+/* FINE SEZIONE RECENSIONE TEAMBIT */
 
 /* FOOTER */
 
@@ -502,7 +594,7 @@ header .fa-bars {
   }
 
   .btn-google-slack {
-    display: block;
+    flex-direction: column;
     width: 100%;
   }
 
@@ -523,6 +615,23 @@ header .fa-bars {
     justify-content: space-between;
     width: 100%;
     max-width: 860px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .btn-section4 {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-section4 p {
+    padding: 15px 0;
+  }
+
+  .btn-section4 a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }
 

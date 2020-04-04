@@ -1,0 +1,73 @@
+.review-teambit {
+    @include flex-align-column(center);
+    background-color: $background-color;
+    padding: 75px 25px 50px 25px;
+}
+
+.top-text-review {
+    text-align: center;
+    padding-bottom: 50px;
+
+    h1 {
+        @include color-fontSize-fontWeight($primary-color, 40px, 500);
+        display: inline;
+        line-height: 60px;
+    }
+
+    img {
+        padding-left: 7px;
+    }
+}
+
+blockquote {
+    position: relative;
+    width: 100%;
+    max-width: 628px;
+    margin-bottom: 35px;
+    padding: 20px 20px 20px 40px;
+    background-color: white;
+    @include border-1px-solid-radius(border, $third-color, 7px);
+
+    & > img {
+        position: absolute;
+        width: 37px;
+        height: auto;
+        top: -19px;
+        left: 0;
+    }
+
+    & > p {
+        @include color-fontSize($primary-color, 16px);
+        line-height: 25px;
+        margin-bottom: 25px;
+    }
+}
+
+.details-authors-review {
+    display: flex;
+
+    img {
+        width: 38px;
+    }
+
+    #padding-left-img {
+        margin-left: 12px;
+    }
+}
+
+.name-authors-review {
+    padding-left: 12px;
+}
+
+#names {
+    @include color-fontSize($secondary-color, 14px);
+    padding-bottom: 7px;
+}
+
+#role {
+    @include color-fontSize($primary-color, 12px);
+}
+
+#max-width {
+    max-width: 628px;
+}

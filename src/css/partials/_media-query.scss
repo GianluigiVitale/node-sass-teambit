@@ -81,7 +81,7 @@
     }
 
     .btn-google-slack {
-        display: block;
+        flex-direction: column;
         width: 100%;
 
         p {
@@ -101,5 +101,21 @@
         @include flex-justify(space-between);
         width: 100%;
         max-width: 860px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .btn-section4 {
+        flex-direction: column;
+        width: 100%;
+
+        p {
+            padding: 15px 0;
+        }
+
+        a {
+            width: 100%;
+            @include flex-justify(center);
+        }
     }
 }

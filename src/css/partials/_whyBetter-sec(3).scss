@@ -15,7 +15,7 @@
     width: 100%;
     height: auto;
     max-width: 768px;
-    padding-bottom: 20px;
+    padding-bottom: 20px;   /* serve per il responsive per dare spazio */
 }
 
 .text-reason {
@@ -55,7 +55,7 @@
     @include flex-justify(center);
 
     img {
-        max-width: 270px;
+        width: 270px;
         height: auto;
     }
 }
