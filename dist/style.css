@@ -514,6 +514,7 @@ blockquote > p {
 
 .details-authors-review {
   display: flex;
+  align-items: flex-start;
 }
 
 .details-authors-review img {

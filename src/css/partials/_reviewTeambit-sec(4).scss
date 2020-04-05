@@ -44,7 +44,7 @@ blockquote {
 }
 
 .details-authors-review {
-    display: flex;
+    @include flex-align(flex-start);
 
     img {
         width: 38px;
