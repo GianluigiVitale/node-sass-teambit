@@ -58,6 +58,14 @@ li {
   float: right;
 }
 
+.active {
+  display: flex;
+}
+
+.hidden {
+  display: none !important;
+}
+
 /* FINE STILE GENERALE */
 
 /* HEADER */
@@ -65,7 +73,7 @@ li {
 .cookies {
   position: fixed;
   bottom: 0;
-  z-index: 9998;
+  z-index: 11;
   width: 100%;
   background-color: #ffe7d2;
   border-top: 1px solid #BDB5AF;
@@ -616,6 +624,116 @@ footer.container {
 }
 
 /* FINE FOOTER */
+
+/* SEZIONE SUPPORTO */
+
+.icon-support {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 12;
+  width: 60px;
+  height: 60px;
+  background-color: #30488F;
+  border-radius: 50%;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.icon-support svg {
+  fill: white;
+}
+
+.icon-s-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: appear 0.16s linear;
+          animation: appear 0.16s linear;
+}
+
+.icon-s-1 .svg-icon {
+  width: 28px;
+  height: 32px;
+}
+
+.icon-s-1 svg {
+  width: 28px;
+  height: 32px;
+}
+
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.icon-s-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: rotate 0.08s linear;
+          animation: rotate 0.08s linear;
+}
+
+.icon-s-2 .svg-icon {
+  width: 14px;
+  height: 14px;
+}
+
+.icon-s-2 svg {
+  width: 14px;
+  height: 14px;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(-30deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(-30deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* FINE SEZIONE SUPPORTO */
 
 /* MEDIA QUERY */
 

@@ -45,3 +45,11 @@ li {
         float: right;
     }
 }
+
+.active {
+    display: flex;
+}
+
+.hidden {
+    display: none !important;
+}

@@ -1,0 +1,77 @@
+// .support {
+//
+// }
+
+.icon-support {
+    @include flex-justify-align(center, center);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 12;
+    width: 60px;
+    height: 60px;
+    background-color: $secondary-color;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    svg {
+        fill: white;
+    }
+}
+
+.icon-s-1 {
+    @include flex-justify-align(center, center);
+    width: 60px;
+    height: 60px;
+    animation: appear 0.16s linear;
+
+    .svg-icon {
+        width: 28px;
+        height: 32px;
+    }
+
+    svg {
+        width: 28px;
+        height: 32px;
+    }
+}
+
+@keyframes appear {
+    0% {opacity: 0; transform: scale(0);}
+    100% {opacity: 1; transform: scale(1);}
+}
+
+.icon-s-2 {
+    @include flex-justify-align(center, center);
+    width: 60px;
+    height: 60px;
+    animation: rotate 0.08s linear;
+
+    .svg-icon {
+        width: 14px;
+        height: 14px;
+    }
+
+    svg {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+@keyframes rotate {
+    0% {transform: rotate(-30deg);}
+    100% {transform: rotate(0deg);}
+}
+
+
+
+
+
+
+
+
+
+//

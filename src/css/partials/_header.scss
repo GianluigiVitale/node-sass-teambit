@@ -1,5 +1,5 @@
 .cookies {
-    @include fixed-element(bottom, 9998);
+    @include fixed-element(bottom, 11);
     background-color: $background-color;
     @include border-1px-solid(border-top, $third-color);
     text-align: center;
