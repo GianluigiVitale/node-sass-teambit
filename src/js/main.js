@@ -18,11 +18,13 @@ function mostraNascondiMenuATendina() {     // // questa funzione al click dell'
         $(this).hide();
         $('.icona .fa-times').show();
         $('.hamburger-menu').show();
+        $('section, footer, .cookies').css('opacity', '0.5');
     });
 
     $('.icona .fa-times').click(function () {   // quando si clicca la X nasconde il menu a tendina e mostra l'hamburgher
         $(this).hide();
         $('.icona .fa-bars').show();
         $('.hamburger-menu').hide();
+        $('section, footer, .cookies').css('opacity', '1');
     });
 }
