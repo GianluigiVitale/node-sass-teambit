@@ -52,7 +52,7 @@
 }
 
 .img-text {
-    @include flex-justify(center);
+    @include flex-justify-align(center, flex-start);
 
     img {
         width: 270px;

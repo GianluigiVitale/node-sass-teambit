@@ -449,6 +449,7 @@ header .fa-times {
 .img-text {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 }
 
 .img-text img {
