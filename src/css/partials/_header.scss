@@ -18,7 +18,7 @@
 }
 
 .container-full-width {
-    @include fixed-element(top, 999);
+    @include fixed-element(top, 15);
     background-color: white;
 }
 

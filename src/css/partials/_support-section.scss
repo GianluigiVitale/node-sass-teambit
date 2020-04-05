@@ -1,6 +1,118 @@
-// .support {
-//
-// }
+.popup-support {
+    display: none;
+    width: 100%;
+    max-width: 360px;
+    position: fixed;
+    z-index: 16;
+    bottom: 95px;
+    right: 25px;
+    @include border-1px-solid-radius(border, lightgray, 7px);
+    animation: opacityAnim 0.16s linear;
+}
+
+@keyframes opacityAnim {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.top-information-support {
+    background: linear-gradient(135deg, rgb(255, 231, 210) 0%, rgb(255, 177, 108) 100%);
+    height: 255px;
+    padding: 25px 25px 0px 35px;
+    border-radius: 7px;
+}
+
+.content-opacity {
+    animation: opacityAnim 0.48s linear 0s;
+
+    img {
+        height: 32px;
+        margin-bottom: 16px;
+    }
+
+    h3 {
+        @include color-fontSize-fontWeight(black, 32px, 400);
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+}
+
+.conversation-answer {
+    @include flex-justify(center);
+    background-color: white;
+    padding-bottom: 26px;
+    @include border-1px-solid-radius(border-bottom, lightgray, 7px);
+}
+
+.start-conversation {
+    width: 330px;
+    padding: 26px 24px 24px;
+    margin-top: 15px;
+    @include border-1px-solid-radius(border-top, $fifth-color, 7px);
+    box-shadow: 1px 1px 1px 1px lightgray;
+    animation: opacityAnim 0.72s linear 0s;
+
+
+    h2 {
+        @include color-fontSize-fontWeight(black, 16px, 400);
+    }
+
+    P {
+        @include color-fontSize($fourth-color, 14px);
+        margin-bottom: 8px;
+    }
+}
+
+.new-conversation {
+    @include flex-align(center);
+
+    img {
+        width: 52px;
+        height: 52px;
+        margin-right: 10px;
+        border-radius: 50%;
+    }
+
+    a {
+        background-color: $fifth-color;
+        padding: 0 24px;
+        border-radius: 40px;
+        line-height: 40px;
+        transition: background-color 0.3s ease 0s;
+
+        &:hover {
+            background-color: #3A59B8;
+        }
+    }
+}
+
+.send {
+    i, span {
+        color: white;
+    }
+
+    i {
+        padding-right: 5px;
+    }
+
+    span {
+        font-size: 13px;
+    }
+}
+
+.svg-icon {
+    width: 15px;
+    height: 16px;
+
+    svg {
+        width: 15px;
+        height: 16px;
+    }
+}
 
 .icon-support {
     @include flex-justify-align(center, center);

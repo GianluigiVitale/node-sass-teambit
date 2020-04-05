@@ -112,6 +112,7 @@ mostraNascondiMenuATendina();
 $('.icon-support').click(function () {
   // al click di '.icon-support' mostra l'icona della X o l'altra
   $(this).children().toggleClass('active').toggleClass('hidden');
+  $('.popup-support').toggleClass('show');
 }); // FUNZIONI UTILIZZATE
 
 function mostraNascondiMenuATendina() {

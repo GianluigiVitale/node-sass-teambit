@@ -36,6 +36,11 @@
     a {
         display: block;
         margin-bottom: 45px;
+        transition: color 0.2s linear 0s;
+
+        &:hover {
+            color: #263972;
+        }
     }
 
     span {
