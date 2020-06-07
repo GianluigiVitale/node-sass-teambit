@@ -1,5 +1,5 @@
 # Node-sass-teambit
-This is a complete replica of the landing page of teambit.io .  
+This is a complete replica of the landing page of [teambit](teambit.io) .  
 
 Everything has been replicated such as the hamburger menu as well as the window of the live chat.  
 
